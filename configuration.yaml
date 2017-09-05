@@ -1,0 +1,22 @@
+name: 又拍云插件
+identification: notadd/cloud/upyun
+description: 又拍云管理插件。
+author:
+    - Allen
+    - 674397601@qq.com
+version: 0.1.0
+provider: Notadd\Slide\Extension
+assets:
+    scripts:
+        - assets/extensions/notadd/slide/js/extension.min.js
+    stylesheets:
+        - assets/extensions/notadd/slide/css/extension.min.css
+csrf:
+    - 'api/slide*'
+events:
+    subscribes:
+        - Notadd\Slide\Listeners\RouteRegister
+migrations:
+    - databases/migrations
+publishes:
+    assets/extensions/notadd/slide: resources/mixes/administration/dist/assets/extensions/notadd/slide
