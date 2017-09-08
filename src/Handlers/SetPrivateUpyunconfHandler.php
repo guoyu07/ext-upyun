@@ -9,7 +9,7 @@ use Notadd\Foundation\Routing\Abstracts\Handler;
 /**
  * Class SetUpyunconfHandler.
  */
-class SetUpyunTokenconfHandler extends Handler
+class SetPrivateUpyunconfHandler extends Handler
 {
     /**
      * @var \Notadd\Foundation\Setting\Contracts\SettingsRepository

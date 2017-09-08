@@ -8,7 +8,7 @@ use Notadd\Foundation\Setting\Contracts\SettingsRepository;
 /**
  * Class GetUpyunTokenconfHandler.
  */
-class GetUpyunTokenconfHandler extends Handler
+class GetPrivateUpyunconfHandler extends Handler
 {
     /**
      * @var \Notadd\Foundation\Setting\Contracts\SettingsRepository
