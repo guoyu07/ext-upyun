@@ -11,8 +11,8 @@ namespace Notadd\Cloud\Controllers;
 
 use Notadd\Cloud\Handlers\GetUpyunconfHandler;
 use Notadd\Cloud\Handlers\GetUpyunTokenconfHandler;
+use Notadd\Cloud\Handlers\SetPrivateUpyunconfHandler;
 use Notadd\Cloud\Handlers\SetUpyunconfHandler;
-use Notadd\Cloud\Handlers\SetUpyunTokenconfHandler;
 use Notadd\Cloud\Handlers\GetUpyunModeconfHandler;
 use Notadd\Cloud\Handlers\SetUpyunModeconfHandler;
 use Notadd\Cloud\Handlers\GetUpyunModeAudioHandler;
@@ -35,7 +35,7 @@ class UpyunController extends Controller
         return $handler->toResponse()->generateHttpResponse();
     }
 
-    public function getToken(GetUpyunTokenconfHandler $handler)
+    public function getPrivate(GetPrivateUpyunconfHandler $handler)
     {
         return $handler->toResponse()->generateHttpResponse();
     }
@@ -50,7 +50,7 @@ class UpyunController extends Controller
         return $handler->toResponse()->generateHttpResponse();
     }
 
-    public function setToken(SetUpyunTokenconfHandler $handler)
+    public function setPrivate(SetPrivateUpyunconfHandler $handler)
     {
         return $handler->toResponse()->generateHttpResponse();
     }
