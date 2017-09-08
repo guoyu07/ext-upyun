@@ -43,7 +43,9 @@ class SetUpyunconfHandler extends Handler
             'operatorPassword.ralpha_dash' => 'operatorPassword由数字字母下滑线组成',
             'bucketName.required'          => 'bucketName不能为空',
             'bucketName.alpha_dash'        => 'bucketName由数字字母下滑线组成',
-            'domain.required'              => '域名不能为空'
+            'domain.required'              => '域名不能为空',
+            'domain.url'                   => '域名必须为合法路径',
+            'folder.required'              => '文件夹名字不能为空'
         ]);
         $this->settings->set('upyun.bucketName', $this->request->input('bucketName'));
         $this->settings->set('upyun.operatorName', $this->request->input('operatorName'));
