@@ -40,7 +40,6 @@ class GetUploadInfoHandler extends Handler
             'user_id.required' => '用户ID不能为空',
         ]);
         $data = $this->cloud->getUploadInfo();
-        dd($this->cloud->getOptions());
         if ($data) {
             return $this->withCode(200)->withData($data)->withMessage('获取信息成功');
         } else {
