@@ -42,8 +42,8 @@ class CreateExtCloudDetailsTable extends Migration
             $table->string('sha1')->comment('文件SHA1值')->nullable();
             $table->string('sha256')->comment('文件SHA256值')->nullable();
             $table->string('hash')->comment('文件hash值')->unique()->nullable();
-//            $table->string('extend_type')->nullable();
-//            $table->string('extend_value')->nullable();
+            $table->string('extend_type')->nullable();
+            $table->string('extend_value')->nullable();
 
             $table->timestamps();
         });
