@@ -10,7 +10,7 @@
 namespace Notadd\Cloud\Controllers;
 
 use Notadd\Cloud\Handlers\GetUpyunconfHandler;
-use Notadd\Cloud\Handlers\GetUpyunTokenconfHandler;
+use Notadd\Cloud\Handlers\GetPrivateUpyunconfHandler;
 use Notadd\Cloud\Handlers\SetPrivateUpyunconfHandler;
 use Notadd\Cloud\Handlers\SetUpyunconfHandler;
 use Notadd\Cloud\Handlers\GetUpyunModeconfHandler;
