@@ -7,7 +7,6 @@
  */
 namespace Notadd\Cloud\Controllers;
 
-use Notadd\Foundation\Mail\Handlers\TestHandler;
 use Notadd\Foundation\Routing\Abstracts\Controller;
 use Notadd\Cloud\Handlers\DeleteAllHandler;
 
