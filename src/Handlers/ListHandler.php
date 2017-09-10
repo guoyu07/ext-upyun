@@ -36,7 +36,6 @@ class ListHandler extends Handler
 
         $name = $this->request->name;
         $data = $this->cloud->fileList($name);
-        dd($data);
         if ($data) {
             $this->withCode(200)->withData($data)->withMessage('success');
         } else {
