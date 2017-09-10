@@ -31,7 +31,6 @@ class UploadHandler extends Handler
     public function Execute()
     {
         $data = $this->cloud->upload();
-        //dd($data);
         if(!array_key_exists("key",$data)){
             return $this->withCode(402)->withMessage('文件上传失败');
         }else{
@@ -48,7 +47,7 @@ class UploadHandler extends Handler
             $detail->ori_type=$data['mimeType'];
             $detail->group_id=$this->request->get('group_id');
             if($detail->save()){
-                if ($data['driver'] == 'qiniu') {
+                if ($data['driver'] == 'upyun') {
                     return $this->withCode(200)->withMessage('成功上传文件到云');
                 }
             }else{
