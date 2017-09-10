@@ -33,7 +33,10 @@ class GetUpyunWatermarkconfHandler extends Handler
         parent::__construct($container);
         $this->settings = $settings;
     }
-
+    /**
+     * GetUpyunWatermarkconfHandler execute
+     *
+     */
     public function execute()
     {
         $this->withCode(200)->withData([
