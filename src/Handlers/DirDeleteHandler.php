@@ -40,7 +40,7 @@ class DirDeleteHandler extends Handler
         if ($data) {
             return $this->withCode(200)->withData($data)->withMessage('成功删除云空间文件夹');
         } else {
-            return $this->withCode(200)->withMessage('folder not exist');
+            return $this->withCode(500)->withError('folder not exist');
         }
 
     }
