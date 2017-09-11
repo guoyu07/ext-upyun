@@ -31,7 +31,7 @@ class RouteRegister extends AbstractRouteRegister
             $this->router->post('upload/info/get', UploadController::class . '@getUploadInfo');
         });
 
-        $this->router->group(['middleware' => ['cross', 'web'], 'prefix' => 'api/cloud'], function () {
+        $this->router->group(['middleware' => ['cross', 'web'], 'prefix' => 'api/cloud/upyun'], function () {
 
             $this->router->post('search', QueryController::class . '@search');
             $this->router->post('groups', QueryController::class . '@groups');
@@ -45,6 +45,7 @@ class RouteRegister extends AbstractRouteRegister
             $this->router->post('list', UploadController::class . '@fileList');
             $this->router->post('dir/delete', UploadController::class . '@dirDelete');
             $this->router->get('status/get', UploadController::class . '@getstatus');
+            $this->router->post('test', UploadController::class . '@test');
 
 
             $this->router->post('notify', UploadController::class . '@notify')->name('notify');
