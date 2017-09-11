@@ -5,18 +5,18 @@ author:
     - Allen
     - 674397601@qq.com
 version: 0.1.0
-provider: Notadd\Slide\Extension
+provider: Notadd\Cloud\Extension
 assets:
     scripts:
-        - assets/extensions/notadd/slide/js/extension.min.js
+        - assets/extensions/notadd/cloud/js/extension.min.js
     stylesheets:
-        - assets/extensions/notadd/slide/css/extension.min.css
+        - assets/extensions/notadd/cloud/css/extension.min.css
 csrf:
-    - 'api/slide*'
+    - 'api/cloud*'
 events:
     subscribes:
-        - Notadd\Slide\Listeners\RouteRegister
+        - Notadd\Cloud\Listeners\RouteRegister
 migrations:
     - databases/migrations
 publishes:
-    assets/extensions/notadd/slide: resources/mixes/administration/dist/assets/extensions/notadd/slide
+    assets/extensions/notadd/cloud: resources/mixes/administration/dist/assets/extensions/notadd/cloud
