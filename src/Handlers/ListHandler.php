@@ -31,9 +31,8 @@ class ListHandler extends Handler
         $this->cloud = $cloud;
     }
 
-    public function Execute()
+    public function execute()
     {
-
         $name = $this->request->name;
         $data = $this->cloud->fileList($name);
         if ($data) {
