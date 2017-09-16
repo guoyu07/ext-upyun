@@ -47,13 +47,13 @@ class RouteRegister extends AbstractRouteRegister
             $this->router->get('status/get', UploadController::class . '@getstatus');
             $this->router->post('test', UploadController::class . '@test');
 
-
             $this->router->post('notify', UploadController::class . '@notify')->name('notify');
             $this->router->post('notify/apps', UploadController::class . '@appsNotify')->name('apppsnotify');
             $this->router->post('notify/video/thumb', UploadController::class . '@videoThumbNotify')->name('videoThumbNotify');
 
             $this->router->post('set', UpyunController::class . '@set');
             $this->router->post('get', UpyunController::class . '@get');
+            
             $this->router->post('private/set', UpyunController::class . '@setPrivate');
             $this->router->post('private/get', UpyunController::class . '@getPrivate');
             $this->router->post('watermark/set', UpyunController::class . '@setWatermark');
