@@ -38,7 +38,7 @@ class DeleteAllHandler extends Handler
         ]);
         $id = json_decode($this->request->id, true);
 
-        $listKey = Detail::whereIn('id', $id)->pluck('key')->toArray();
+        $listKey = Detail::query()->whereIn('id', $id)->pluck('key')->toArray();
 
         foreach ($listKey as $item) {
             $this->cloud->delete($item);
@@ -48,7 +48,7 @@ class DeleteAllHandler extends Handler
         if ($res) {
             return $this->withCode(200)->withMessage('批量删除成功');
         } else {
-            return $this->withCode(400)->withMessage('批量删除失败');
+            return $this->withCode(400)->withError('批量删除失败');
         }
 
     }
