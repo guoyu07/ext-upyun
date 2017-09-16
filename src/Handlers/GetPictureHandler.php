@@ -1,9 +1,10 @@
 <?php
 /**
- * This file is part of Notadd.
+ * The file is part of Notadd
  *
+ * @author: AllenGu<674397601@qq.com>
  * @copyright (c) 2017, notadd.com
- * @datetime      17-6-23 下午3:31
+ * @datetime: 下午6:38
  */
 
 namespace Notadd\Cloud\Handlers;
@@ -12,7 +13,7 @@ use Notadd\Foundation\Routing\Abstracts\Handler;
 use Illuminate\Container\Container;
 use Notadd\Cloud\Cloud;
 
-class ListHandler extends Handler
+class GetPictureHandler extends Handler
 {
     /**
      * @var \Notadd\Cloud\Cloud

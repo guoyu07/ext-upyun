@@ -26,9 +26,4 @@ class QueryController extends Controller
     {
         return $handler->toResponse()->generateHttpResponse();
     }
-
-    public function test(TestHandler $handler)
-    {
-        return $handler->toResponse()->generateHttpResponse();
-    }
 }
