@@ -64,7 +64,7 @@ class SetUpyunconfHandler extends Handler
         if ($data) {
             $this->withCode(200)->withData($data)->withMessage('修改设置成功!');
         } else {
-            $this->withCode(200)->withMessage('修改设置失败!');
+            $this->withCode(200)->withError('修改设置失败!');
         }
 
     }
