@@ -53,7 +53,7 @@ class RouteRegister extends AbstractRouteRegister
 
             $this->router->post('set', UpyunController::class . '@set');
             $this->router->post('get', UpyunController::class . '@get');
-            
+
             $this->router->post('private/set', UpyunController::class . '@setPrivate');
             $this->router->post('private/get', UpyunController::class . '@getPrivate');
             $this->router->post('watermark/set', UpyunController::class . '@setWatermark');
