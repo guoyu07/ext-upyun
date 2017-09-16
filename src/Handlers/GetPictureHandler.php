@@ -39,7 +39,7 @@ class GetPictureHandler extends Handler
         if ($data) {
             $this->withCode(200)->withData($data)->withMessage('success');
         } else {
-            $this->withCode(200)->withMessage('folder not exist');
+            $this->withCode(201)->withError('folder not exist');
         }
 
     }
