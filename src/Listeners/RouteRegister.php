@@ -45,7 +45,7 @@ class RouteRegister extends AbstractRouteRegister
             $this->router->post('list', UploadController::class . '@fileList');
             $this->router->post('dir/delete', UploadController::class . '@dirDelete');
             $this->router->get('status/get', UploadController::class . '@getstatus');
-            $this->router->post('test', UploadController::class . '@test');
+//            $this->router->post('test', UploadController::class . '@test');
 
             $this->router->post('notify', UploadController::class . '@notify')->name('notify');
             $this->router->post('notify/apps', UploadController::class . '@appsNotify')->name('apppsnotify');
