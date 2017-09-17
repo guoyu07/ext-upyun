@@ -129,4 +129,10 @@ class UploadController extends Controller
     {
         return $handler->toResponse()->generateHttpResponse();
     }
+
+    public function getInfo(GetStatusHandler $handler)
+    {
+        return $handler->toResponse()->generateHttpResponse();
+    }
+
 }
