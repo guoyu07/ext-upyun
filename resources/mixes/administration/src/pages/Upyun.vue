@@ -226,7 +226,7 @@
                     if (valid) {
                         self.$http.post(`${window.api}/cloud/upyun/private/set`, self.privateSpace).then(() => {
                             self.$notice.open({
-                                title: injection.trans('私有空间设置数据成功'),
+                                title: '私有空间设置数据成功',
                             });
                         }).catch(() => {}).finally(() => {
                             self.loading = false;
@@ -234,7 +234,7 @@
                     } else {
                         self.loading = false;
                         self.$notice.error({
-                            title: injection.trans('请正确填写设置信息'),
+                            title: '请正确填写设置信息',
                         });
                     }
                 });
@@ -246,7 +246,7 @@
                     if (valid) {
                         self.$http.post(`${window.api}/cloud/upyun/set`, self.publicSpace).then(() => {
                             self.$notice.open({
-                                title: injection.trans('公有空间设置数据成功'),
+                                title: '公有空间设置数据成功',
                             });
                         }).catch(() => {}).finally(() => {
                             self.loading = false;
@@ -254,7 +254,7 @@
                     } else {
                         self.loading = false;
                         self.$notice.error({
-                            title: injection.trans('请正确填写设置信息'),
+                            title: '请正确填写设置信息',
                         });
                     }
                 });
@@ -266,7 +266,7 @@
                     if (valid) {
                         self.$http.post(`${window.api}/cloud/upyun/mode/audio/set`, self.setAudio).then(() => {
                             self.$notice.open({
-                                title: injection.trans('音频设置数据成功'),
+                                title: '音频设置数据成功',
                             });
                         }).catch(() => {}).finally(() => {
                             self.loading = false;
@@ -274,7 +274,7 @@
                     } else {
                         self.loading = false;
                         self.$notice.error({
-                            title: injection.trans('请正确填写设置信息'),
+                            title: '请正确填写设置信息',
                         });
                     }
                 });
@@ -286,7 +286,7 @@
                     if (valid) {
                         self.$http.post(`${window.api}/cloud/upyun/mode/image/set`, self.setImage).then(() => {
                             self.$notice.open({
-                                title: injection.trans('图片设置数据成功'),
+                                title: '图片设置数据成功',
                             });
                         }).catch(() => {}).finally(() => {
                             self.loading = false;
@@ -294,7 +294,7 @@
                     } else {
                         self.loading = false;
                         self.$notice.error({
-                            title: injection.trans('请正确填写设置信息'),
+                            title: '请正确填写设置信息',
                         });
                     }
                 });
@@ -306,7 +306,7 @@
                     if (valid) {
                         self.$http.post(`${window.api}/cloud/upyun/mode/video/set`, self.setVideo).then(() => {
                             self.$notice.open({
-                                title: injection.trans('视频设置数据成功'),
+                                title: '视频设置数据成功',
                             });
                         }).catch(() => {}).finally(() => {
                             self.loading = false;
@@ -314,7 +314,7 @@
                     } else {
                         self.loading = false;
                         self.$notice.error({
-                            title: injection.trans('请正确填写设置信息'),
+                            title: '请正确填写设置信息',
                         });
                     }
                 });
@@ -324,7 +324,7 @@
                 self.loading = true;
                 self.$http.post(`${window.api}/cloud/upyun/watermark/set`, self.waterMark).then(() => {
                     self.$notice.open({
-                        title: injection.trans('水印设置数据成功'),
+                        title: '水印设置数据成功',
                     });
                 }).catch(() => {}).finally(() => {
                     self.loading = false;
