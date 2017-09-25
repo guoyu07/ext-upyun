@@ -1,7 +1,6 @@
 <script>
     import injection from '../helpers/injection';
 
-//    window.api = 'http://upload.zhanghe.ibenchu.pw/api';
     export default {
         beforeRouteEnter(to, from, next) {
             next(() => {
@@ -225,7 +224,7 @@
                 self.loading = true;
                 self.$refs.privateSpace.validate(valid => {
                     if (valid) {
-                        self.$http.post(`${window.api}/cloud/token/set`, self.privateSpace).then(() => {
+                        self.$http.post(`${window.api}/cloud/upyun/private/set`, self.privateSpace).then(() => {
                             self.$notice.open({
                                 title: injection.trans('私有空间设置数据成功'),
                             });
@@ -245,7 +244,7 @@
                 self.loading = true;
                 self.$refs.publicSpace.validate(valid => {
                     if (valid) {
-                        self.$http.post(`${window.api}/cloud/set`, self.publicSpace).then(() => {
+                        self.$http.post(`${window.api}/cloud/upyun/set`, self.publicSpace).then(() => {
                             self.$notice.open({
                                 title: injection.trans('公有空间设置数据成功'),
                             });
@@ -265,7 +264,7 @@
                 self.loading = true;
                 self.$refs.setAudio.validate(valid => {
                     if (valid) {
-                        self.$http.post(`${window.api}/cloud/mode/audio/set`, self.setAudio).then(() => {
+                        self.$http.post(`${window.api}/cloud/upyun/mode/audio/set`, self.setAudio).then(() => {
                             self.$notice.open({
                                 title: injection.trans('音频设置数据成功'),
                             });
@@ -285,7 +284,7 @@
                 self.loading = true;
                 self.$refs.setImage.validate(valid => {
                     if (valid) {
-                        self.$http.post(`${window.api}/cloud/mode/image/set`, self.setImage).then(() => {
+                        self.$http.post(`${window.api}/cloud/upyun/mode/image/set`, self.setImage).then(() => {
                             self.$notice.open({
                                 title: injection.trans('图片设置数据成功'),
                             });
@@ -305,7 +304,7 @@
                 self.loading = true;
                 self.$refs.setVideo.validate(valid => {
                     if (valid) {
-                        self.$http.post(`${window.api}/cloud/mode/video/set`, self.setVideo).then(() => {
+                        self.$http.post(`${window.api}/cloud/upyun/mode/video/set`, self.setVideo).then(() => {
                             self.$notice.open({
                                 title: injection.trans('视频设置数据成功'),
                             });
@@ -323,7 +322,7 @@
             submitWaterMark() {
                 const self = this;
                 self.loading = true;
-                self.$http.post(`${window.api}/cloud/watermark/set`, self.waterMark).then(() => {
+                self.$http.post(`${window.api}/cloud/upyun/watermark/set`, self.waterMark).then(() => {
                     self.$notice.open({
                         title: injection.trans('水印设置数据成功'),
                     });

@@ -1,4 +1,4 @@
-import Upyun from '../pages/Upyun.vue';
+import Upyun from '../pages/Upyun';
 
 export default function (injection) {
     injection.useExtensionRoute([
