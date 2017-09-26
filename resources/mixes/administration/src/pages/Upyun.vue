@@ -385,7 +385,8 @@
                                     <row>
                                         <i-col span="12">
                                             <form-item>
-                                                <i-button :loading="loading" type="primary" @click.native="submitPublicSpace">
+                                                <i-button :loading="loading" type="primary"
+                                                          @click.native="submitPublicSpace">
                                                     <span v-if="!loading">确认提交</span>
                                                     <span v-else>正在提交…</span>
                                                 </i-button>
@@ -509,7 +510,8 @@
                                     <row>
                                         <i-col span="12">
                                             <form-item>
-                                                <i-button :loading="loading" type="primary" @click.native="submitSetImage">
+                                                <i-button :loading="loading" type="primary"
+                                                          @click.native="submitSetImage">
                                                     <span v-if="!loading">确认提交</span>
                                                     <span v-else>正在提交…</span>
                                                 </i-button>
@@ -534,7 +536,8 @@
                                     <row>
                                         <i-col span="12">
                                             <form-item>
-                                                <i-button :loading="loading" type="primary" @click.native="submitSetAudio">
+                                                <i-button :loading="loading" type="primary"
+                                                          @click.native="submitSetAudio">
                                                     <span v-if="!loading">确认提交</span>
                                                     <span v-else>正在提交…</span>
                                                 </i-button>
@@ -572,7 +575,8 @@
                                     <row>
                                         <i-col span="12">
                                             <form-item>
-                                                <i-button :loading="loading" type="primary" @click.native="submitSetVideo">
+                                                <i-button :loading="loading" type="primary"
+                                                          @click.native="submitSetVideo">
                                                     <span v-if="!loading">确认提交</span>
                                                     <span v-else>正在提交…</span>
                                                 </i-button>
