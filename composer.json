@@ -16,12 +16,14 @@
             "Notadd\\Cloud\\": "src/"
         }
     },
+    "minimum-stability": "stable",
     "require": {
         "php": ">=7.0",
         "upyun/sdk": "^3.0"
     },
     "require-dev": {
-        "notadd/installers": "0.5.*"
-    },
-    "minimum-stability": "stable"
+        "notadd/installers": "0.14.*",
+        "notadd/testing": "0.4.*",
+        "phpunit/phpunit": "~6.0"
+    }
 }
