@@ -308,7 +308,7 @@ class Cloud
 
     public function deleteById($id)
     {
-        $detail = Detail::find($id);
+        $detail = Detail::query()->find($id);
         $this->cloud->delete($detail->path);
 
         return $detail->delete();
@@ -316,7 +316,7 @@ class Cloud
 
     public function deleteByIds($ids)
     {
-        $details = Detail::whereIn('id', $ids)->get()->toArray();
+        $details = Detail::query()->whereIn('id', $ids)->get()->toArray();
         $listKey = array_pluck($details, 'path');
         foreach ($listKey as $item) {
             $this->cloud->delete($item);
@@ -413,7 +413,7 @@ class Cloud
 
     public function getModule($module, $type = '', $paginate = '')
     {
-        $query = Detail::where('module', $module);
+        $query = Detail::query()->where('module', $module);
 
         if ($type) {
             $mime = explode(",", $type);

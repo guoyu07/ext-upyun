@@ -41,7 +41,7 @@ class VideoThumbNotifyHandler extends Handler
     {
         $data = Request::all();
         log::info($data);
-        $detail = Detail::where('task_id', $data['task_id'])->first();
+        $detail = Detail::query()->where('task_id', $data['task_id'])->first();
         log::info($detail->path);
 
         $is_token = $detail->is_token;

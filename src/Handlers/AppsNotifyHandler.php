@@ -41,7 +41,7 @@ class AppsNotifyHandler extends Handler
     {
         $data = Request::all();
         log::info($data);
-        $detail = Detail::where('task_id', $data['task_id'])->first();
+        $detail = Detail::query()->where('task_id', $data['task_id'])->first();
         log::info($detail->path);
         $path = $detail->path;
 

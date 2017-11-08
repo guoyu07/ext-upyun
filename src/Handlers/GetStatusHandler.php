@@ -36,7 +36,7 @@ class GetStatusHandler extends Handler
             'task_id.required' => 'task_id不能为空',
         ]);
         $task_id = $this->request->task_id;
-        $detail = Detail::where('task_id', $task_id)->first();
+        $detail = Detail::query()->where('task_id', $task_id)->first();
         $is_token = $detail->is_token;
         $this->cloud->setIsToken($is_token);
         $status = $this->cloud->getStatus($task_id, 'status');
